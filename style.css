@@ -1,0 +1,125 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0e0e10;
+  color: #eaeaea;
+  line-height: 1.6;
+}
+
+/* Navigation */
+header {
+  background-color: #141416;
+  padding: 1em 2em;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #56ccf2;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #eaeaea;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #56ccf2;
+}
+
+/* Hero Section */
+.hero {
+  padding: 6em 2em 4em;
+  text-align: center;
+  background: linear-gradient(135deg, #1f1f22, #111);
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  color: #56ccf2;
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: #cfcfcf;
+}
+
+/* Sections */
+section {
+  padding: 4em 2em;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2, .portfolio h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: #56ccf2;
+}
+
+/* Portfolio Cards */
+.project {
+  background-color: #1a1a1d;
+  padding: 1.5em;
+  border-radius: 10px;
+  margin-bottom: 2em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.project h2 {
+  margin-bottom: 0.5em;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 0.5em;
+  color: #56ccf2;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* Resume and Contact */
+.resume a, .contact a {
+  color: #56ccf2;
+  text-decoration: none;
+}
+
+.resume a:hover, .contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2em;
+  background-color: #141416;
+  font-size: 0.9em;
+  color: #aaa;
+}
