@@ -73,10 +73,15 @@ nav ul li a:hover {
   z-index: 1;
 }
 
-.hero h1,
+.hero h1 {
+  font-size: 3.5em;
+  margin-bottom: 0.4em;
+  color: #56ccf2;
+}
+
 .hero p {
-  position: relative;
-  z-index: 2;
+  font-size: 1.4em;
+  color: #e0e0e0;
 }
 
 /* Sections */
