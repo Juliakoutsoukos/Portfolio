@@ -74,16 +74,14 @@ nav ul li a:hover {
 }
 
 .hero h1 {
-  font-weight: 700;
-  letter-spacing: 1px;
   font-size: 3.5em;
   margin-bottom: 0.4em;
-  color: #56ccf2;
+  color: #ffffff; /* brighter white */
 }
 
 .hero p {
   font-size: 1.4em;
-  color: #e0e0e0;
+  color: #f0f0f0; /* soft bright text */
 }
 
 /* Sections */
