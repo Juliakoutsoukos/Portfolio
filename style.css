@@ -74,6 +74,8 @@ nav ul li a:hover {
 }
 
 .hero h1 {
+  font-weight: 700;
+  letter-spacing: 1px;
   font-size: 3.5em;
   margin-bottom: 0.4em;
   color: #56ccf2;
