@@ -1,4 +1,4 @@
-/* General Reset */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* Navigation */
+/* Header & Navigation */
 header {
   background-color: #141416;
   padding: 1em 2em;
@@ -73,6 +73,7 @@ nav ul li a:hover {
   height: auto;
   margin-top: 2em;
   border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 /* Sections */
@@ -93,8 +94,16 @@ section h2, .portfolio h1 {
   background-color: #1a1a1d;
   padding: 1.5em;
   border-radius: 10px;
-  margin-bottom: 2em;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  margin-bottom: 2.5em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.project-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1em;
 }
 
 .project h2 {
@@ -112,7 +121,7 @@ section h2, .portfolio h1 {
   text-decoration: underline;
 }
 
-/* Resume and Contact */
+/* Resume & Contact */
 .resume a, .contact a {
   color: #56ccf2;
   text-decoration: none;
