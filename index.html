@@ -1,50 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Julia Koutsoukos | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="logo">Julia Koutsoukos</div>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">My Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<div class="actions">
+<a class="pill" href="#">Live site</a>
+<a class="pill" href="#">GitHub</a>
+</div>
+</div>
+</article>
 
-  <section class="hero fade-in">
-    <h1>Hello, I'm Julia.</h1>
-    <p>Information Science Student | UX Research & Design</p>
-  </section>
 
-  <section class="about fade-in">
-    <h2>About Me</h2>
-    <p>I’m Julia Koutsoukos, a student at Michigan State University studying Information Science with a focus on Human-Centered Design. I’m passionate about creating thoughtful, user-first digital experiences that are both intuitive and inclusive. My work includes UX research, design thinking, and front-end development, and this site is a snapshot of design principles I’ve been learning and building along the way.</p>
-  </section>
-
-  <section class="resume">
-  <h2>Resume</h2>
-  <p><a href="resume.pdf" target="_blank">Download my resume (PDF)</a></p>
+<article class="card">
+<div class="thumb">Image or GIF</div>
+<div class="card-body">
+<div class="eyebrow">Research</div>
+<h3>Yoga × Social Media — Literature Review</h3>
+<p class="meta">Qualitative synthesis • MI 355 • 2025</p>
+<p>Examined wellness, motivation, and privacy concerns across mobile fitness experiences; identified gaps and opportunities for ethical HCI features.</p>
+<div class="actions">
+<a class="pill" href="#">Read summary</a>
+</div>
+</div>
+</article>
+</div>
+</div>
 </section>
 
-  <section class="contact" id="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:juliakoutsoukos14@gmail.com">Juliakoutsoukos14@gmail.com</a></p>
-  <p>Phone: <a href="tel:8042971672">804-297-1672</a></p>
-  <p>GitHub: <a href="https://github.com/juliakoutsoukos" target="_blank">@juliakoutsoukos</a></p>
-  <p>Linkedin: <a href="https://www.linkedin.com/in/juliakoutsoukos">@juliakoutsoukos</a></p>
+
+<!-- Research (Embed placeholder) -->
+<section id="research">
+<div class="container">
+<div class="section-head">
+<h2>Research<span class="dot">.</span></h2>
+<p>Embeds and write‑ups for ongoing studies, surveys, and prototyping sprints.</p>
+</div>
+<div class="embed">
+<!-- Replace src with your Figma or PDF URL -->
+<iframe title="Figma or PDF" srcdoc="<style>body{font-family:Inter,system-ui,sans-serif;color:#6b7280;display:grid;place-items:center;height:100%;margin:0}</style><div>Drop a Figma or PDF link here</div>"></iframe>
+</div>
+</div>
 </section>
 
-  <footer>
-    <p>&copy; 2025 Julia Koutsoukos</p>
-  </footer>
+
+<!-- About / Resume feature -->
+<section id="about">
+<div class="container">
+<div class="feature" id="resume">
+<div>
+<h2>About & Resume<span class="dot">.</span></h2>
+<p class="mt-3" style="color:var(--muted)">I design for calm, useful experiences. I balance prototyping with qualitative research and care about accessibility and privacy‑aware choices in wellness tech.</p>
+<div class="flex mt-4">
+<a class="btn alt" href="#">Download PDF</a>
+<a class="btn" href="#contact">Contact me</a>
+</div>
+</div>
+<div>
+<ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px;color:var(--muted)">
+<li><strong style="color:var(--text)">Skills</strong> — Figma, Prototyping, User Interviews, HTML/CSS</li>
+<li><strong style="color:var(--text)">Focus</strong> — Wellness, Student Experience, Ethical HCI</li>
+<li><strong style="color:var(--text)">Education</strong> — B.S. Information Science, MSU</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- Contact -->
+<section id="contact">
+<div class="container">
+<div class="section-head">
+<h2>Contact<span class="dot">.</span></h2>
+<p>Open to Spring ’26 internships and collaborations.</p>
+</div>
+<p style="color:var(--muted)">Email: <a href="mailto:julia@example.com" style="color:var(--accent);text-decoration:underline;text-underline-offset:3px">julia@example.com</a></p>
+</div>
+</section>
+
+
+<footer>
+<div class="container foot">
+<div>© <span id="y"></span> Julia Koutsoukos</div>
+</div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
 
