@@ -1,86 +1,74 @@
 <!DOCTYPE html>
-<div class="actions">
-<a class="pill" href="#">Live site</a>
-<a class="pill" href="#">GitHub</a>
-</div>
-</div>
-</article>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Julia Koutsoukos — Portfolio</title>
+<meta name="description" content="UX/HCI portfolio of Julia Koutsoukos — research, prototyping, and human‑centered design." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+/* ================================================
+Julia Koutsoukos — Advanced UI System (v1)
+Futuristic, white background, vivid magenta accent
+================================================ */
 
 
-<article class="card">
-<div class="thumb">Image or GIF</div>
-<div class="card-body">
-<div class="eyebrow">Research</div>
-<h3>Yoga × Social Media — Literature Review</h3>
-<p class="meta">Qualitative synthesis • MI 355 • 2025</p>
-<p>Examined wellness, motivation, and privacy concerns across mobile fitness experiences; identified gaps and opportunities for ethical HCI features.</p>
-<div class="actions">
-<a class="pill" href="#">Read summary</a>
-</div>
-</div>
-</article>
-</div>
-</div>
-</section>
+/* ------------------------------
+Tokens
+------------------------------ */
+:root {
+/* Color */
+--bg: #ffffff; /* page */
+--surface: #ffffff; /* cards */
+--text: #0f0f12; /* body text */
+--muted: #6b7280; /* secondary text */
+--line: #eceef3; /* borders */
+--accent: #FF4ECD; /* vivid magenta */
+--accent-2: #C9188D; /* deeper magenta */
+--success: #16a34a;
+--warn: #f59e0b;
 
 
-<!-- Research (Embed placeholder) -->
-<section id="research">
-<div class="container">
-<div class="section-head">
-<h2>Research<span class="dot">.</span></h2>
-<p>Embeds and write‑ups for ongoing studies, surveys, and prototyping sprints.</p>
-</div>
-<div class="embed">
-<!-- Replace src with your Figma or PDF URL -->
-<iframe title="Figma or PDF" srcdoc="<style>body{font-family:Inter,system-ui,sans-serif;color:#6b7280;display:grid;place-items:center;height:100%;margin:0}</style><div>Drop a Figma or PDF link here</div>"></iframe>
-</div>
-</div>
-</section>
+/* Effects */
+--ring: rgba(255, 78, 205, 0.28);
+--shadow-sm: 0 6px 20px rgba(17, 17, 20, .06);
+--shadow: 0 12px 40px rgba(17, 17, 20, .08);
+--shadow-lg: 0 18px 60px rgba(17, 17, 20, .12);
 
 
-<!-- About / Resume feature -->
-<section id="about">
-<div class="container">
-<div class="feature" id="resume">
-<div>
-<h2>About & Resume<span class="dot">.</span></h2>
-<p class="mt-3" style="color:var(--muted)">I design for calm, useful experiences. I balance prototyping with qualitative research and care about accessibility and privacy‑aware choices in wellness tech.</p>
-<div class="flex mt-4">
-<a class="btn alt" href="#">Download PDF</a>
-<a class="btn" href="#contact">Contact me</a>
-</div>
-</div>
-<div>
-<ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px;color:var(--muted)">
-<li><strong style="color:var(--text)">Skills</strong> — Figma, Prototyping, User Interviews, HTML/CSS</li>
-<li><strong style="color:var(--text)">Focus</strong> — Wellness, Student Experience, Ethical HCI</li>
-<li><strong style="color:var(--text)">Education</strong> — B.S. Information Science, MSU</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
+/* Radii & Spacing */
+--radius-xl: 22px;
+--radius-lg: 16px;
+--radius-md: 12px;
+--radius-sm: 10px;
+--space: clamp(16px, 2.4vw, 28px);
+--space-lg: clamp(28px, 6vw, 80px);
+--maxw: 1120px;
 
 
-<!-- Contact -->
-<section id="contact">
-<div class="container">
-<div class="section-head">
-<h2>Contact<span class="dot">.</span></h2>
-<p>Open to Spring ’26 internships and collaborations.</p>
-</div>
-<p style="color:var(--muted)">Email: <a href="mailto:julia@example.com" style="color:var(--accent);text-decoration:underline;text-underline-offset:3px">julia@example.com</a></p>
-</div>
-</section>
+/* Motion */
+--ease: cubic-bezier(.2,.6,.2,1);
+--dur: .6s;
+}
 
 
-<footer>
-<div class="container foot">
-<div>© <span id="y"></span> Julia Koutsoukos</div>
-</div>
-</footer>
-<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-</body>
+@media (prefers-color-scheme: dark) {
+:root {
+--bg: #0a0b0f;
+--surface: #0e1016;
+--text: #f6f7fb;
+--muted: #c7c9d1;
+--line: #1d2230;
+--shadow: 0 12px 40px rgba(0,0,0,.40);
+}
+}
+
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+margin: 0; background: var(--bg); color: var(--text);
 </html>
 
