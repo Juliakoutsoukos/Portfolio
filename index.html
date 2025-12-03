@@ -1,69 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Julia Koutsoukos — Portfolio</title>
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body data-page="home">
-  <!-- Header -->
+<body>
   <header class="site-header">
-    <nav class="nav container" aria-label="Primary">
-      <a href="index.html" class="brand" aria-label="Home">
-        <span class="brand-dot" aria-hidden="true"></span>
-        <span>Julia Koutsoukos</span>
-      </a>
-      <div class="nav-links">
-        <a href="work.html">Work</a>
-        <a href="research.html">Research</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a class="btn primary" href="resume.html">Resume</a>
-      </div>
-    </nav>
+    <div class="container nav-bar">
+      <a href="index.html" class="logo">JK</a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Hero (Glass Orb) -->
-  <main id="top" class="hero">
-    <div class="container hero-center">
-      <div class="glass-wrap">
-        <div class="glass-orb" aria-hidden="true"></div>
-        <section class="hero-card" aria-labelledby="intro-title">
-          <div class="kicker">UX • HCI • Research</div>
-          <h1 id="intro-title">Julia Koutsoukos</h1>
-          <p class="subhead">Undergraduate Student and Aspiring Designer</p>
-          <div class="hero-accent" aria-hidden="true"></div>
-          <div class="chiprow">
-            <span class="chip">prototyping</span>
-            <span class="chip">user research</span>
-            <span class="chip">design</span>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Portfolio · Early Version</p>
+          <h1>Hi, I’m Julia.</h1>
+          <p class="lead">
+            I’m an Information Science student focused on human-centered design.
+            I enjoy turning ideas into interfaces that feel simple and supportive.
+          </p>
+
+          <div class="hero-actions">
+            <a href="about.html" class="btn primary">Learn more about me</a>
+            <a href="contact.html" class="btn ghost">Say hello</a>
           </div>
-        </section>
+
+          <div class="hero-note">
+            <p>
+              This is an earlier, more minimal version of my portfolio, created to
+              show how my design and coding skills have grown over time.
+            </p>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <!-- optional image; you can delete this whole figure if you want -->
+          <!-- <figure>
+            <img src="img/headshot.jpg" alt="Portrait of Julia">
+          </figure> -->
+          <div class="hero-card-inner">
+            <h2>What I care about</h2>
+            <ul>
+              <li>Clear, friendly interfaces</li>
+              <li>Designing for student wellness</li>
+              <li>Connecting digital and physical experiences</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
-    </div>
+    </section>
+
+    <section class="highlight">
+      <div class="container">
+        <h2>Recent focuses</h2>
+        <p class="section-intro">
+          A quick snapshot of areas I’ve been exploring in class projects and personal work.
+          (See my advanced site for deeper case studies.)
+        </p>
+
+        <div class="highlight-grid">
+          <div class="highlight-card">
+            <h3>UX & Interaction</h3>
+            <p>
+              Sketching flows, building low-fidelity prototypes,
+              and thinking about how people actually move through an interface.
+            </p>
+          </div>
+
+          <div class="highlight-card">
+            <h3>Web Foundations</h3>
+            <p>
+              Writing clean HTML and CSS layouts that are responsive and readable,
+              without relying on heavy frameworks.
+            </p>
+          </div>
+
+          <div class="highlight-card">
+            <h3>Wellness & Tech</h3>
+            <p>
+              Exploring how digital products can support yoga, fitness, and mental
+              health in a way that feels grounding instead of overwhelming.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- Minimal footer with placeholders -->
-  <footer>
-    <div class="container foot">
-      <div>
-        © <span id="y"></span> Julia Koutsoukos ·
-        <a class="link" href="mailto:youremail@example.com">youremail@example.com</a> ·
-        <a class="link" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a> ·
-        <a class="link" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
-      </div>
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span id="year">2025</span> Julia Koutsoukos</p>
+      <p class="footer-sub">Built with basic HTML &amp; CSS and deployed on Netlify.</p>
     </div>
   </footer>
-
-  <!-- Scripts -->
-  <script src="js/app.js"></script>
 </body>
 </html>
